@@ -1,1 +1,23 @@
+body {
+  font-family: sans-serif;
+  padding: 1em 3em;
+}
 
+h1 {
+  color: darkRed;
+}
+
+#total {
+  margin-top: 1em;
+}
+
+.wanted {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1%;
+}
+
+ul {
+  width: 100%;
+  list-style: none;
+}
