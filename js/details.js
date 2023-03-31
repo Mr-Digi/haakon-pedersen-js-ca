@@ -13,7 +13,7 @@ fetch(apiUrl)
     .then(data => {
         console.log(data)
         const ul = document.createElement('ul');
-
+        document.title = data.title
         const liName = document.createElement('li');
         const liDescription = document.createElement('li');
         const liReward = document.createElement('li');
