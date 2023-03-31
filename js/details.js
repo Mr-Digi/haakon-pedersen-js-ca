@@ -18,12 +18,17 @@ fetch(apiUrl)
         const liDescription = document.createElement('li');
         const liReward = document.createElement('li');
         const liImage = document.createElement('img');
-        liImage.src = data.images[0].original
+        liImage.src = data.images[0].original;
         liName.textContent = 'Name: ' + data.title;
         liDescription.textContent = 'Description: ' + data.description;
-        liReward.textContent = 'Reward: ' + data.reward_text
+        //Check if there is a reward. If there is, display it. if not, display "No reward"
+        if (data.reward_text) {
+            liReward.textContent = 'Reward: ' + data.reward_text;
+        } else {
+            liReward.textContent = 'Reward: No reward';
+        }
     
-        ul.appendChild(liName)
+        ul.appendChild(liName);
         ul.appendChild(liDescription);
         ul.appendChild(liReward)
         ul.appendChild(liImage);
