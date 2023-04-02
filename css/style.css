@@ -84,8 +84,11 @@ input, select, textarea {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
-  margin-bottom: 16px;
   resize: vertical
+}
+
+input[type=text], input[type=email] {
+  margin-bottom: 16px;
 }
 
 input[type=submit] {
@@ -107,6 +110,16 @@ input[type=submit]:hover {
   padding: 20px;
   width: 30%;
   margin: 0 auto;
+}
+
+#nameError, #subjectError, #emailError, #addressError {
+  display: none;
+  color: rgb(128, 0, 0);
+}
+
+#validationSuccess {
+  display: none;
+  color: lime;
 }
 
 .details {

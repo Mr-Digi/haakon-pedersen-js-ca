@@ -93,5 +93,5 @@ fetch(apiUrl)
     })
     .catch(error => {
         console.error(error);
-        document.body.removeChild(loadingIndicator);
+        loadingIndicator.textContent('A error occured: ' + error);
     })

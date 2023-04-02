@@ -38,5 +38,5 @@ try {
         })
 } catch(error) {
     console.log('An error occured')
-    document.body.removeChild(loadingIndicator);
+    loadingIndicator.textContent('A error occured: ' + error);
 }
